@@ -69,7 +69,7 @@ CREATE TABLE ingreso_de_horas(
       ON UPDATE RESTRICT
 );
 
-CREATE TABLE cambio_costo_total(
+CREATE TABLE liquidacionAjuste(
 	 id_cambio INT AUTO_INCREMENT PRIMARY KEY,
     id_participante INT,
     cambios_hora INT,
@@ -80,7 +80,7 @@ CREATE TABLE cambio_costo_total(
       ON UPDATE RESTRICT
 );
 
-CREATE TABLE costo_total(
+CREATE TABLE liquidacion(
 	 id_costo INT AUTO_INCREMENT PRIMARY KEY,
     id_proyecto INT,
     id_cambio INT,
