@@ -64,9 +64,9 @@ BEGIN
 	 
     SET nombre_proyecto = (SELECT a.nombre_proyecto FROM proyecto AS a WHERE a.id_proyecto = id_proyecto);
     
-    INSERT INTO costo_total(id_proyecto, proyecto_nombre, total_de_horas) VALUES(id_proyecto, nombre_proyecto, liquidacion);
+    INSERT INTO liquidacion(id_proyecto, proyecto_nombre, total_de_horas) VALUES(id_proyecto, nombre_proyecto, liquidacion);
 	
-    SELECT * FROM costo_total;
+    SELECT * FROM liquidacion;
 
 END$$
 
